@@ -1,0 +1,166 @@
+lahore
+islamabad
+karachi
+peshawar
+dubai
+jeddah
+
+
+Monday:
+Lahore to Karachi AAA172 9am to 11am economy: 17358 business: 32472
+Karachi to Lahore AAA173 12pm to 2pm economy: 17358 business: 32472
+Islamabad to Dubai AAA926 12pm to 4pm economy: 59797 business: 96653
+Dubai to Islamabad AAA927 5pm to 9pm economy: 59797 business: 96653
+Lahore to Karachi AAA684 5pm to 6pm economy: 17358 business: 32472
+Karachi to Lahore AAA685 9pm to 10pm economy: 17358 business: 32472
+
+
+Tuesday:
+Islamabad to Karachi AAA208 10am to 12pm economy: 21252 business: 38685
+Karachi to Islamabad AAA209 1pm to 3pm economy: 21252 business: 38685
+Lahore to Dubai AAA784 2pm to 6pm economy: 62437 business: 105249
+Dubai to Lahore AAA785 7pm to 11pm economy: 62437 business: 105249
+Karachi to Jeddah AAA496 12pm to 5pm economy: 76501 business: 133926
+Jeddah to Karachi AAA497 6pm to 11pm economy: 76501 business: 133926
+
+
+Wednesday:
+Lahore to Islamabad AAA340 12pm to 1pm economy: 11375 business: 19856
+Islamabad to Lahore AAA341 2pm to 3pm economy: 11375 business: 19856
+Karachi to Dubai AAA836 10am to 2pm economy: 67842 business: 117028
+Dubai to Karachi AAA837 6pm to 10pm economy: 67842 business: 117028
+Lahore to Islamabad AAA712 5pm to 6pm economy: 11375 business: 19856
+Islamabad to Lahore AAA713 8pm to 9pm economy: 11375 business: 19856
+
+
+Thursday:
+Lahore to Peshawar AAA304 11am to 12pm economy: 13453 business: 23577
+Peshawar to Lahore AAA305 1pm to 2pm economy: 13453 business: 23577
+Karachi to Dubai AAA414 12pm to 4pm economy: 67842 business: 117028
+Dubai to Karachi AAA415 6pm to 10pm economy: 67842 business: 117028
+Lahore to Jeddah AAA524 11am to 4pm economy: 83344 business: 147890
+Jeddah to Lahore AAA525 5pm to 10pm economy: 83344 business: 147890
+
+
+Friday:
+Islamabad to Karachi AAA224 3pm to 5pm economy: 21252 business: 38685
+Karachi to Islamabad AAA225 6pm to 8pm economy: 21252 business: 38685
+Lahore to Dubai AAA738 9am to 1pm economy: 62437 business: 105249
+Dubai to Lahore AAA739 2pm to 6pm economy: 62437 business: 105249
+Islamabad to Peshawar AAA276 2pm to 3pm economy: 9744 business: 16035
+Peshawar to Islamabad AAA277 4pm to 5pm economy: 9744 business: 16035
+
+
+Saturday:
+Lahore to Karachi AAA152 12pm to 2pm economy: 17358 business: 32472
+Karachi to Lahore AAA153 5pm to 7pm economy: 17358 business: 32472
+Islamabad to Dubai AAA648 11am to 3pm economy: 59797 business: 96653
+Dubai to Islamabad AAA649 5pm to 9pm economy: 59797 business: 96653
+Karachi to Peshawar AAA370 3pm to 5pm economy: 24417 business: 43590
+Peshawar to Karachi AAA371 6pm to 8pm economy: 24417 business: 43590
+
+
+Sunday:
+Islamabad to Dubai AAA964 9am to 1pm economy: 59797 business: 96653
+Dubai to Islamabad AAA965 3pm to 7pm economy: 59797 business: 96653
+Lahore to Islamabad AAA215 2pm to 3pm economy: 11375 business: 19856
+Islamabad to Lahore AAA216 6pm to 7pm economy: 11375 business: 19856
+Islamabad to Jeddah AAA392 11am to 4pm economy: 81017 business: 140698
+Jeddah to Islamabad AAA393 6pm to 11pm economy: 81017 business: 140698
+
+
+
+INSERT INTO flights (flight_no, origin, destination, day, departure_time, arrival_time, economy_price, business_price)
+VALUES
+-- Monday flights
+('AAA172', 'Lahore', 'Karachi', 'Monday', 9, 11, 17358, 32472),
+('AAA173', 'Karachi', 'Lahore', 'Monday', 12, 14, 17358, 32472),
+('AAA926', 'Islamabad', 'Dubai', 'Monday', 12, 16, 59797, 96653),
+('AAA927', 'Dubai', 'Islamabad', 'Monday', 17, 21, 59797, 96653),
+('AAA684', 'Lahore', 'Karachi', 'Monday', 17, 18, 17358, 32472),
+('AAA685', 'Karachi', 'Lahore', 'Monday', 21, 22, 17358, 32472),
+-- Tuesday flights
+('AAA208', 'Islamabad', 'Karachi', 'Tuesday', 10, 12, 21252, 38685),
+('AAA209', 'Karachi', 'Islamabad', 'Tuesday', 13, 15, 21252, 38685),
+('AAA784', 'Lahore', 'Dubai', 'Tuesday', 14, 18, 62437, 105249),
+('AAA785', 'Dubai', 'Lahore', 'Tuesday', 19, 23, 62437, 105249),
+('AAA496', 'Karachi', 'Jeddah', 'Tuesday', 12, 17, 76501, 133926),
+('AAA497', 'Jeddah', 'Karachi', 'Tuesday', 18, 23, 76501, 133926),
+-- Wednesday flights
+('AAA340', 'Lahore', 'Islamabad', 'Wednesday', 12, 13, 11375, 19856),
+('AAA341', 'Islamabad', 'Lahore', 'Wednesday', 14, 15, 11375, 19856),
+('AAA836', 'Karachi', 'Dubai', 'Wednesday', 10, 14, 67842, 117028),
+('AAA837', 'Dubai', 'Karachi', 'Wednesday', 18, 22, 67842, 117028),
+('AAA712', 'Lahore', 'Islamabad', 'Wednesday', 17, 18, 11375, 19856),
+('AAA713', 'Islamabad', 'Lahore', 'Wednesday', 20, 21, 11375, 19856),
+-- Thursday flights
+('AAA304', 'Lahore', 'Peshawar', 'Thursday', 11, 12, 13453, 23577),
+('AAA305', 'Peshawar', 'Lahore', 'Thursday', 13, 14, 13453, 23577),
+('AAA414', 'Karachi', 'Dubai', 'Thursday', 12, 16, 67842, 117028),
+('AAA415', 'Dubai', 'Karachi', 'Thursday', 18, 22, 67842, 117028),
+('AAA524', 'Lahore', 'Jeddah', 'Thursday', 11, 16, 83344, 147890),
+('AAA525', 'Jeddah', 'Lahore', 'Thursday', 17, 22, 83344, 147890),
+-- Friday flights
+('AAA224', 'Islamabad', 'Karachi', 'Friday', 15, 17, 21252, 38685),
+('AAA225', 'Karachi', 'Islamabad', 'Friday', 18, 20, 21252, 38685),
+('AAA738', 'Lahore', 'Dubai', 'Friday', 9, 13, 62437, 105249),
+('AAA739', 'Dubai', 'Lahore', 'Friday', 14, 18, 62437, 105249),
+('AAA276', 'Islamabad', 'Peshawar', 'Friday', 14, 15, 9744, 16035),
+('AAA277', 'Peshawar', 'Islamabad', 'Friday', 16, 17, 9744, 16035),
+-- Saturday flights
+('AAA152', 'Lahore', 'Karachi', 'Saturday', 12, 14, 17358, 32472),
+('AAA153', 'Karachi', 'Lahore', 'Saturday', 17, 19, 17358, 32472),
+('AAA648', 'Islamabad', 'Dubai', 'Saturday', 11, 15, 59797, 96653),
+('AAA649', 'Dubai', 'Islamabad', 'Saturday', 17, 21, 59797, 96653),
+('AAA370', 'Karachi', 'Peshawar', 'Saturday', 15, 17, 24417, 43590),
+('AAA371', 'Peshawar', 'Karachi', 'Saturday', 18, 20, 24417, 43590),
+-- Sunday flights
+('AAA964', 'Islamabad', 'Dubai', 'Sunday', 9, 13, 59797, 96653),
+('AAA965', 'Dubai', 'Islamabad', 'Sunday', 15, 19, 59797, 96653),
+('AAA215', 'Lahore', 'Islamabad', 'Sunday', 14, 15, 11375, 19856),
+('AAA216', 'Islamabad', 'Lahore', 'Sunday', 18, 19, 11375, 19856),
+('AAA392', 'Islamabad', 'Jeddah', 'Sunday', 11, 16, 81017, 140698),
+('AAA393', 'Jeddah', 'Islamabad', 'Sunday', 18, 23, 81017, 140698);
+
+fix links
+change password look
+date to day conversion
+
+
+ok we have 3 tables in a database called project
+these are the tables with the following attributes
+
+booking:
+
+booking_reference
+flight_no
+flight_date
+flight_class
+
+flights:
+
+flight_no
+origin
+destination
+departure_time
+arrival_time
+economy_price
+business_price
+
+passenger:
+
+ticket_no
+booking_reference
+first_name
+last_name
+gender
+phone_number
+
+please keep this in mind
+
+
+
+we have the following webpages and we will transfer data from one web page to the other, here is the sequence
+
+searchflight.php -> bookflight.php -> passengerinfo.php -> payment.php -> ticket.php
+
