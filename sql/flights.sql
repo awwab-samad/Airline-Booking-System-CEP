@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `flights`;
 CREATE TABLE IF NOT EXISTS `flights` (
-  `flight_no` varchar(6) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `flight_no` varchar(6) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `origin` varchar(255) NOT NULL,
   `destination` varchar(255) NOT NULL,
   `day` varchar(255) NOT NULL,
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `flights` (
   `economy_price` int NOT NULL,
   `business_price` int NOT NULL,
   PRIMARY KEY (`flight_no`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `flights`

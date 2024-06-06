@@ -32,8 +32,8 @@ CREATE TABLE IF NOT EXISTS `booking` (
   `booking_reference` int NOT NULL,
   `flight_no` varchar(6) NOT NULL,
   `flight_date` date NOT NULL,
-  `flight_class` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `flight_class` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `booking`

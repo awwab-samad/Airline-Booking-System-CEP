@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `password` varchar(10) NOT NULL,
   `status` varchar(10) NOT NULL,
   PRIMARY KEY (`username`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `users`

@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `payment` (
   `credit_card_no` int NOT NULL,
   `balance` float NOT NULL,
   PRIMARY KEY (`credit_card_no`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `payment`
